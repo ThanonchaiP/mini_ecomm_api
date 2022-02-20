@@ -9,6 +9,8 @@ const schema = new Schema(
     password: { type: String, required: true },
     tel: { type: String },
     address: { type: String },
+    image_name: { type: String },
+    image_url: { type: String },
   },
   {
     timestamps: true,

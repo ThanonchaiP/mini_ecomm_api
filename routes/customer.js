@@ -7,6 +7,7 @@ const cartController = require("../controllers/cartController");
 router.get("/", customerController.index);
 router.get("/cart/:id", cartController.getCartById);
 router.put("/cart/:id", cartController.updateQty);
+router.put("/update/:id", customerController.update);
 router.delete("/cart/:id", cartController.deleteItemFromCart);
 
 module.exports = router;
