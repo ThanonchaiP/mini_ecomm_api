@@ -7,8 +7,8 @@ const schema = new Schema(
     name: { type: String, required: true },
     description: { type: String },
     price: { type: Number, required: true },
-    type: { type: String, required: true },
-    sex: { type: String },
+    type: { type: Schema.Types.ObjectId, required: true, ref: "ProductType" },
+    sex: { type: String, required: true },
   },
   {
     collection: "products", //อ้างให้ตรงกับ collection ใน DB

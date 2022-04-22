@@ -15,6 +15,8 @@ const orderRouter = require("./routes/order");
 const orderListRouter = require("./routes/orderList");
 const loginRouter = require("./routes/login");
 const registerRouter = require("./routes/register");
+const sizeRouter = require("./routes/size");
+const productTypeRouter = require("./routes/productType");
 
 const app = express();
 app.use(cors());
@@ -36,6 +38,8 @@ app.use("/order", orderRouter);
 app.use("/list", orderListRouter);
 app.use("/login", loginRouter);
 app.use("/register", registerRouter);
+app.use("/size", sizeRouter);
+app.use("/product_type", productTypeRouter);
 
 app.use(errorHandler);
 
